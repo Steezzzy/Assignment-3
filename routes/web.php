@@ -57,3 +57,11 @@ $arr = array(["title"=>"CSE4500 Class","start"=>"2022-02-23T17:30:00","end"=>"20
 Route::fallback(function () {
     return view('error');
 });
+
+Route::get('/db-test', function () {
+    try {         
+         echo \DB::connection()->getDatabaseName();     
+    } catch (\Exception $e) {
+          echo 'None';
+    }
+});
