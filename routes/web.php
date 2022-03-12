@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\TodoController;
-
+use App\Http\Controllers\EventController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -66,6 +66,7 @@ Route::get('/db-test', function () {
     }
 });
 
+Route::resource('/event', EventController::class);
 Route::resource('/todos', TodoController::class);
 
 
