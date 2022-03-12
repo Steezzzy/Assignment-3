@@ -7,12 +7,12 @@
 @stop
 
 @section('content')
-<a href="{{ route('events.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('event.create') }} " class="btn btn-primary" >Create</a>
 <div class="row">
   <div class="col-md-12">
     <div class="card card-primary">
       <div class="card-body p-0">
-        <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap">
+        <div id="calendar" class="fc sfc-media-screen fc-direction-ltr fc-theme-bootstrap">
         </div>
       </div>
     </div>
