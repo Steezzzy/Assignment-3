@@ -48,7 +48,7 @@ class EventController extends Controller
             'endtime' =>date( $request->endtime), 
        ]);
 
-       return redirect("/calandar");
+       return redirect("/calendar");
     }
 
     /**
