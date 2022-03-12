@@ -24,8 +24,8 @@ class TodoController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-             'title' => 'requried',
-             'progress' => 'requried',
+             'title' => 'required',
+             'progress' => 'required',
         ]);
 
         $todo = Todo::create([ 

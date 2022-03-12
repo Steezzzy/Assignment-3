@@ -37,9 +37,9 @@ class EventController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'requried',
-            'starttime' => 'requried',
-            'endtime' => 'requried',
+            'title' => 'required',
+            'starttime' => 'required',
+            'endtime' => 'required',
        ]);
 
        $todo = Todo::create([ 
