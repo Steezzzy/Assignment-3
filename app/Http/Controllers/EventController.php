@@ -42,7 +42,7 @@ class EventController extends Controller
             'endtime' => 'required',
        ]);
 
-       $todo = Todo::create([ 
+       $todo = Event::create([ 
             'title' => $request->title, 
             'starttime' =>date( $request->starttime),
             'endtime' =>date( $request->endtime), 
